@@ -1,4 +1,4 @@
-package model;
+package ctw.mi81.api_biblioteca.model;
 
 import java.time.LocalDate;
 
@@ -6,7 +6,6 @@ public class Cliente {
     private Long id;
     private String nome;
     private String cpf;
-    private String matricula;
     private String email;
     private LocalDate dataCadastro;
     private Boolean ativo;
@@ -14,11 +13,10 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(Long id, String nome, String cpf, String matricula, String email, LocalDate dataCadastro, Boolean ativo) {
+    public Cliente(Long id, String nome, String cpf, String email, LocalDate dataCadastro, Boolean ativo) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
-        this.matricula = matricula;
         this.email = email;
         this.dataCadastro = dataCadastro;
         this.ativo = ativo;
@@ -46,14 +44,6 @@ public class Cliente {
 
     public void setCpf(String cpf) {
         this.cpf = cpf;
-    }
-
-    public String getMatricula() {
-        return matricula;
-    }
-
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
     }
 
     public String getEmail() {

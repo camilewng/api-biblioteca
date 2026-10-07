@@ -1,4 +1,4 @@
-package model;
+package ctw.mi81.api_biblioteca.model;
 
 public class Livro {
     private Long id;
